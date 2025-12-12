@@ -1,0 +1,17 @@
+.overlay { position: fixed; inset: 0; display: flex; align-items: flex-start; justify-content: center; min-height: 100vh; overflow-y: auto; background: radial-gradient(800px 400px at 50% -10%, rgba(17, 32, 58, 0.5), transparent 60%), rgba(0, 0, 0, 0.35); backdrop-filter: blur(6px); z-index: 9999; }
+.overlay.full { padding: 3rem 1rem 2rem; }
+.dock { position: fixed; right: 16px; bottom: 16px; display: flex; gap: 0.4rem; z-index: 10000; }
+.dock-btn { background: linear-gradient(90deg, var(--accent), var(--accent2)); color: #fff; border: none; border-radius: 999px; padding: 0.5rem 0.8rem; font-size: 0.8rem; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35); }
+.topbar { position: fixed; top: 12px; right: 12px; display: flex; gap: 0.4rem; z-index: 10001; }
+.icon { width: 28px; height: 28px; border-radius: 8px; display: grid; place-items: center; background: #121826; border: 1px solid var(--border); }
+.icon.primary { background: linear-gradient(90deg, var(--accent), var(--accent2)); border: none; color: #fff; }
+.mini { position: fixed; right: 16px; bottom: 16px; z-index: 10000; }
+.mini-bar { display: grid; grid-auto-flow: column; align-items: center; gap: 0.5rem; background: var(--panel); border: 1px solid var(--border); backdrop-filter: blur(6px); border-radius: 999px; padding: 0.35rem 0.6rem; box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35); }
+.mini-bar .sep { width: 1px; height: 16px; background: var(--border); }
+.dot { width: 8px; height: 8px; border-radius: 999px; background: #666; }
+.dot.connected { background: #20c997; }
+.dot.idle { background: #666; }
+.mini-label { color: var(--muted); font-size: 0.72rem; }
+.mini-value { color: var(--text); font-size: 0.78rem; }
+.mini-btns { display: flex; gap: 0.3rem; }
+.mini-btns .secondary { padding: 0.25rem 0.5rem; font-size: 0.72rem; }
