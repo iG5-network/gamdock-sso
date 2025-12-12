@@ -1,0 +1,16 @@
+{
+	"name": "gamedock",
+	"version": "0.1.0",
+	"private": true,
+	"workspaces": [
+		"iG5CORE",
+		"opencash"
+	],
+	"scripts": {
+		"dev": "concurrently -n iG5-CORE,opencash -c \"bgBlue.bold,bgMagenta.bold\" \"npm run dev -w iG5-CORE\" \"npm run dev -w opencash\"",
+		"typecheck": "npm run typecheck -w iG5-CORE && npm run build -w opencash -- --emptyOutDir=false"
+	},
+	"devDependencies": {
+		"concurrently": "^9.0.1"
+	}
+}

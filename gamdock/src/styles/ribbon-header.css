@@ -1,0 +1,6 @@
+.header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.6rem; padding: 0.5rem 0; }
+.header.sticky { position: sticky; top: 0; z-index: 1000; background: var(--panel); border: 1px solid var(--border); backdrop-filter: blur(6px); border-radius: 12px; padding: 0.6rem; }
+.brand { display: flex; align-items: baseline; gap: 0.5rem; }
+.header .brand { flex: 1; min-width: 0; }
+.title { font-size: 1.05rem; letter-spacing: 0.01em; font-weight: 600; text-transform: uppercase; }
+.subtitle { color: var(--muted); font-size: 0.75rem; }

@@ -1,0 +1,145 @@
+:root {
+	--brand-grad: linear-gradient(135deg, #00e0b2 0%, #22c55e 100%);
+	--header-bg: #000000;
+	--panel-bg: #ffffff;
+	--border: #e5e7eb;
+	--text: #0b0f1a;
+	--muted: #6b7280;
+	--ok: #16a34a;
+	--danger: #dc2626;
+	--warning: #f59e0b;
+}
+#root {
+	font-family: 'Plus Jakarta Sans', system-ui, -apple-system, Segoe UI, Roboto,
+		Helvetica, Arial, sans-serif;
+	color-scheme: light;
+	color: var(--text);
+	background: #ffffff;
+	min-height: 100vh;
+}
+body {
+	margin: 0;
+}
+h1 {
+	font-size: 28px;
+	font-weight: 700;
+	letter-spacing: 0.2px;
+	background-image: var(--brand-grad);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+}
+button {
+	background-image: var(--brand-grad);
+	color: #fff;
+	border: none;
+	border-radius: 0;
+	padding: 10px 12px;
+	cursor: pointer;
+}
+button:disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
+}
+input,
+select {
+	background: #f9fafb;
+	color: var(--text);
+	border: 1px solid var(--border);
+	border-radius: 0;
+	padding: 8px 10px;
+}
+.panel {
+	background: var(--panel-bg);
+	border: 1px solid var(--border);
+	border-radius: 0;
+}
+/* compact modal tweaks */
+.compact-modal h1 {
+	display: none;
+}
+.compact-modal button {
+	padding: 8px 10px;
+	font-size: 14px;
+	border-radius: 0;
+}
+.compact-modal input,
+.compact-modal select {
+	padding: 7px 9px;
+	font-size: 14px;
+	border-radius: 0;
+}
+
+.compact-modal .panel,
+.compact-modal .panel * {
+	border-radius: 0;
+}
+
+.spinner {
+	width: 28px;
+	height: 28px;
+	border: 3px solid rgba(0, 0, 0, 0.12);
+	border-top-color: #22c55e;
+	border-radius: 50%;
+	animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.progress {
+	width: 100%;
+	height: 6px;
+	background: rgba(0, 0, 0, 0.08);
+	border-radius: 0;
+	overflow: hidden;
+}
+.progress-bar {
+	height: 100%;
+	background-image: var(--brand-grad);
+	transition: width 200ms ease;
+}
+
+.steps {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 6px;
+}
+.step {
+	height: 8px;
+	background: rgba(255, 255, 255, 0.08);
+	border-radius: 0;
+}
+.step.active {
+	background-image: var(--brand-grad);
+}
+
+.secure-badge {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	color: #a7b0be;
+	font-size: 12px;
+}
+
+.logo {
+	display: inline-flex;
+	align-items: baseline;
+	gap: 2px;
+}
+.logo .open {
+	background: linear-gradient(90deg, #00e0b2 0%, #22c55e 100%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	font-weight: 800;
+	letter-spacing: -0.5px;
+}
+.logo .cash {
+	color: #fff;
+	font-weight: 800;
+	letter-spacing: -0.5px;
+}

@@ -1,0 +1,15 @@
+# Local Netlify folder
+.netlify
+
+# Node.js build outputs
+node_modules/
+dist/
+.cache/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+*.log
+
+# Vite local cache
+.vite/

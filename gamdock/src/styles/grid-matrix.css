@@ -1,0 +1,23 @@
+.app { display: grid; gap: 1.2rem; }
+.overlay .app { width: min(1100px, 92vw); margin: 0 auto; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
+.layout { display: grid; grid-template-columns: 180px 1fr; gap: 0.8rem; }
+.content { display: grid; gap: 0.8rem; }
+
+@media (max-width: 900px) {
+  .grid { grid-template-columns: 1fr; }
+  .layout { grid-template-columns: 1fr; }
+  .sidebar { position: relative; top: 0; }
+}
+
+@media (max-width: 768px) {
+  .form-row { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 600px) {
+  #root { padding: 0.85rem; }
+  .panel { padding: 0.45rem; border-radius: 10px; }
+  input { padding: 0.38rem 0.55rem; font-size: 0.78rem; }
+  .mini-bar { max-width: 94vw; }
+  .dock-btn { padding: 0.45rem 0.65rem; font-size: 0.75rem; }
+}

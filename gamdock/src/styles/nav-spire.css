@@ -1,0 +1,4 @@
+.sidebar { position: sticky; top: 64px; align-self: start; background: var(--panel); border: 1px solid var(--border); backdrop-filter: blur(6px); border-radius: 10px; padding: 0.5rem; }
+.sidebar .nav { display: grid; gap: 0.3rem; }
+.sidebar a { display: block; padding: 0.32rem 0.5rem; border-radius: 8px; color: var(--text); border: 1px solid var(--border); background: #121826; font-size: 0.82rem; }
+.sidebar a:hover { border-color: rgba(255, 255, 255, 0.15); }
